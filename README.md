@@ -14,8 +14,7 @@ $ conda activate py37_bdn
 #(記得是要安裝有 torch==1.7.x+cu數字的指令)
 $ pip install requirements.txt 
 
-# 要補自己的專案
-$ git clone 自己的專案
+$ git clone https://github.com/sksksk1748/BDB-ResNeSt.git
 
 # 執行 initialization.sh 部屬 dataset
 $ cd BDB-ResNeSt
