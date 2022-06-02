@@ -1,0 +1,9 @@
+torch==1.7.1+cu101 torchvision==0.8.2+cu101 torchaudio==0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
+Cython
+scikit-learn
+matplotlib
+tensorboard
+tensorboardX
+fire
+git+https://github.com/zhanghang1989/ResNeSt
+gdown
