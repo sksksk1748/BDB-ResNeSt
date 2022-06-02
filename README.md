@@ -7,17 +7,18 @@
 - Pytorch 1.7.1
 - CUDA 10.1
 ```bash
+$ git clone https://github.com/sksksk1748/BDB-ResNeSt.git
+
 $ conda create --name py37_bdn python=3.7
 $ conda activate py37_bdn
+
+$ cd BDB-ResNeSt
 
 # CUDA 10.1 
 #(記得是要安裝有 torch==1.7.x+cu數字的指令)
 $ pip install requirements.txt 
 
-$ git clone https://github.com/sksksk1748/BDB-ResNeSt.git
-
 # 執行 initialization.sh 部屬 dataset
-$ cd BDB-ResNeSt
 $ sudo chmod 777 initialization.sh
 $ ./initialization.sh
 ```
