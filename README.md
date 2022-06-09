@@ -4,8 +4,8 @@
 ## Environment
 - Ubuntu 18.04
 - Python 3.7
-- Pytorch 1.7.1
-- CUDA 10.1
+- Pytorch 1.9.1
+- NVIDIA CUDA 11.4
 ```bash
 $ git clone https://github.com/sksksk1748/BDB-ResNeSt.git
 
@@ -14,8 +14,6 @@ $ conda activate py37_bdn
 
 $ cd BDB-ResNeSt
 
-# CUDA 10.1 
-#(記得是要安裝有 torch==1.7.x+cu數字的指令)
 $ pip install requirements.txt 
 
 # 執行 initialization.sh 部屬 dataset
