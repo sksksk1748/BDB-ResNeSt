@@ -123,17 +123,11 @@ $ ./table_4_7_1FC.sh
 ```
 - networks_resnest_linear_fdb_2048_1024_gb_delete.py ( 2FC )
 ```bash
-python main_reid.py train --save_dir='./pytorch-ckpt/resnest50/linear_fdb_2048_1024_gb_delete/bs64/market-bfe-adam-400' --max_epoch=400 --eval_step=30 --dataset=market1501 --test_batch=64 --train_batch=64 --optim=adam --adjust_lr
-python main_reid.py train --save_dir='./pytorch-ckpt/resnest50/linear_fdb_2048_1024_gb_delete/bs64/cuhk-label-bfe-adam-400' --max_epoch=400 --eval_step=30 --dataset=cuhk-label --test_batch=64 --train_batch=64 --optim=adam --adjust_lr
-python main_reid.py train --save_dir='./pytorch-ckpt/resnest50/linear_fdb_2048_1024_gb_delete/bs64/cuhk-detect-bfe-adam-400' --max_epoch=400 --eval_step=30 --dataset=cuhk-detect --test_batch=64 --train_batch=64 --optim=adam --adjust_lr
-python main_reid.py train --save_dir='./pytorch-ckpt/resnest50/linear_fdb_2048_1024_gb_delete/bs64/dukemtmc-reid-bfe-adam-400' --max_epoch=400 --eval_step=30 --dataset=dukemtmc-reid --test_batch=64 --train_batch=64 --optim=adam --adjust_lr
+$ ./table_4_7_2FC.sh
 ```
 - networks_resnest_linear_fdb_2048_1024_512_gb_delete.py ( 3FC )
 ```bash
-python main_reid.py train --save_dir='./pytorch-ckpt/resnest50/linear_fdb_2048_1024_512_gb_delete/bs64/market-bfe-adam-400' --max_epoch=400 --eval_step=30 --dataset=market1501 --test_batch=64 --train_batch=64 --optim=adam --adjust_lr
-python main_reid.py train --save_dir='./pytorch-ckpt/resnest50/linear_fdb_2048_1024_512_gb_delete/bs64/cuhk-label-bfe-adam-400' --max_epoch=400 --eval_step=30 --dataset=cuhk-label --test_batch=64 --train_batch=64 --optim=adam --adjust_lr
-python main_reid.py train --save_dir='./pytorch-ckpt/resnest50/linear_fdb_2048_1024_512_gb_delete/bs64/cuhk-detect-bfe-adam-400' --max_epoch=400 --eval_step=30 --dataset=cuhk-detect --test_batch=64 --train_batch=64 --optim=adam --adjust_lr
-python main_reid.py train --save_dir='./pytorch-ckpt/resnest50/linear_fdb_2048_1024_512_gb_delete/bs64/dukemtmc-reid-bfe-adam-400' --max_epoch=400 --eval_step=30 --dataset=dukemtmc-reid --test_batch=64 --train_batch=64 --optim=adam --adjust_lr
+$ ./table_4_7_3FC.sh
 ```
 
 
