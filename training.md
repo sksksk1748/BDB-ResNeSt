@@ -5,7 +5,7 @@ If you want to use table_4_4.sh, table_4_5.sh and table_4_6.sh,
 be sure to modify the contents of networks_resnest.py according to the instructions before using it.
 ```
 ```python
-For example:
+Example of executing table_4_5.sh:
 
 $ vi ~/BDB-ResNeSt/models/networks_resnest.py
                         ⇓ press i on keyboard
