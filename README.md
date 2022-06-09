@@ -5,7 +5,8 @@
 - Ubuntu 18.04
 - Python 3.7
 - Pytorch 1.9.1
-- NVIDIA CUDA 11.4
+- [NVIDIA cuDNN v8.2.2 (July 6th, 2021), for CUDA 11.4](https://developer.nvidia.com/compute/machine-learning/cudnn/secure/8.2.2/11.4_07062021/cudnn-11.4-linux-x64-v8.2.2.26.tgz)
+- [NVIDIA CUDA 11.4 (cuda_11.4.0_470.42.01_linux)](https://developer.nvidia.com/cuda-11-4-0-download-archive?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=18.04&target_type=runfile_local)
 ```bash
 $ git clone https://github.com/sksksk1748/BDB-ResNeSt.git
 
