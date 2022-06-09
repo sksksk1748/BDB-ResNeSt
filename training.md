@@ -1,12 +1,27 @@
 # Training Method
 ## Note :
 ```
-If you want to test the results of each experiment in the paper, make sure to change the corresponding file name to networks.py.
-
+If you want to use table_4_4.sh, table_4_5.sh and table_4_6.sh, be sure to modify the contents of networks_resnest.py according to the instructions before using it.
+```
+```python
 For example:
-~/BDB-ResNeSt/models/networks_resnest.py
-                        ⇓
-~/BDB-ResNeSt/models/networks.py
+
+$ vi ~/BDB-ResNeSt/models/networks_resnest.py
+                        ⇓ i (press i on keyboard)
+152         # Layer 4 no downsample
+153         #resnet = resnest50(pretrained=True, dilation=2)
+154         
+155         # Layer 4 have downsample
+156         resnet = resnest50(pretrained=True)
+                        
+                        ⇓ modify
+152         # Layer 4 no downsample
+153         resnet = resnest50(pretrained=True, dilation=2)
+154         
+155         # Layer 4 have downsample
+156         #resnet = resnest50(pretrained=True)                        
+                        ⇓ :wq
+$ ./table_4_5.sh
 ```
 
 &nbsp; 
