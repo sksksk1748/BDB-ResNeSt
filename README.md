@@ -25,7 +25,7 @@ $ ./initialization.sh
 
 ## Hardware
 - i7-11700K
-- RTX 3090 24GB
+- GIGABYTE RTX 3090 24GB
 - 64GB RAM 
 
 ## Dataset
