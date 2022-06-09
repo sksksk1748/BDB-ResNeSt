@@ -14,7 +14,6 @@ For example:
 
 - networks_resnest_linear_gb_2048_linear_fdb_2048.py		
 ```bash
-$ sudo chmod 777 table_4_3.sh
 $ ./table_4_3.sh
 ```
 
@@ -30,16 +29,14 @@ $ ./table_4_3.sh
 156         resnet = resnest50(pretrained=True)
 ```
 ```bash
-python main_reid.py train --save_dir='./pytorch-ckpt/resnest50/have_downsample/bs64/market-bfe-adam-400' --max_epoch=400 --eval_step=30 --dataset=market1501 --test_batch=64 --train_batch=64 --optim=adam --adjust_lr
-python main_reid.py train --save_dir='./pytorch-ckpt/resnest50/have_downsample/bs64/cuhk-label-bfe-adam-400' --max_epoch=400 --eval_step=30 --dataset=cuhk-label --test_batch=64 --train_batch=64 --optim=adam --adjust_lr
-python main_reid.py train --save_dir='./pytorch-ckpt/resnest50/have_downsample/bs64/cuhk-detect-bfe-adam-400' --max_epoch=400 --eval_step=30 --dataset=cuhk-detect --test_batch=64 --train_batch=64 --optim=adam --adjust_lr
-python main_reid.py train --save_dir='./pytorch-ckpt/resnest50/have_downsample/bs64/dukemtmc-reid-bfe-adam-400' --max_epoch=400 --eval_step=30 --dataset=dukemtmc-reid --test_batch=64 --train_batch=64 --optim=adam --adjust_lr
+$ ./table_4_4.sh
 ```
 
 &nbsp;
 
 ![](doc/The_impact_of_down-sampling_of_the_ResNeSt.png)
-- networks_resnest.py 
+- The down-sampling result is the ResNeSt of `table 4.4`.
+- networks_resnest.py ( No Down-Sampling )
 ```python
 152         # Layer 4 no downsample
 153         resnet = resnest50(pretrained=True, dilation=2)
@@ -48,10 +45,7 @@ python main_reid.py train --save_dir='./pytorch-ckpt/resnest50/have_downsample/b
 156         #resnet = resnest50(pretrained=True)
 ```
 ```bash
-python main_reid.py train --save_dir='./pytorch-ckpt/resnest50/no_downsample_erased_height_ratio/bs64/height_ratio_0.33/market-bfe-adam-400' --max_epoch=400 --eval_step=30 --dataset=market1501 --test_batch=64 --train_batch=64 --optim=adam --erased_height_ratio=0.33 --adjust_lr
-python main_reid.py train --save_dir='./pytorch-ckpt/resnest50/no_downsample_erased_height_ratio/bs64/height_ratio_0.33/cuhk-label-bfe-adam-400' --max_epoch=400 --eval_step=30 --dataset=cuhk-label --test_batch=64 --train_batch=64 --optim=adam --erased_height_ratio=0.33 --adjust_lr
-python main_reid.py train --save_dir='./pytorch-ckpt/resnest50/no_downsample_erased_height_ratio/bs64/height_ratio_0.33/cuhk-detect-bfe-adam-400' --max_epoch=400 --eval_step=30 --dataset=cuhk-detect --test_batch=64 --train_batch=64 --optim=adam --erased_height_ratio=0.33 --adjust_lr
-python main_reid.py train --save_dir='./pytorch-ckpt/resnest50/no_downsample_erased_height_ratio/bs64/height_ratio_0.33/dukemtmc-reid-bfe-adam-400' --max_epoch=400 --eval_step=30 --dataset=dukemtmc-reid --test_batch=64 --train_batch=64 --optim=adam --erased_height_ratio=0.33 --adjust_lr
+$ ./table_4_5.sh
 ```
 
 &nbsp;
@@ -162,7 +156,7 @@ $ ./table_4_8_3FC.sh
 &nbsp;
 
 ![](doc/The_impact_of_number_of_fully_connected_layers_in_the_global_branch_and_the_feature_dropping_branch.png)
-- The experiment results have been run in overall performance. ( 1FC )
+- The 1FC results have been run in overall performance.
 - networks_resnest_conv_gb_2048_1024_linear_fdb_2048_1024.py ( 1Conv&1FC/2FC )
 ```bash
 $ ./table_4_9_1Conv.sh
