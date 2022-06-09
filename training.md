@@ -165,32 +165,20 @@ $ ./table_4_8_3FC.sh
 - The experiment results have been run in overall performance. ( 1FC )
 - networks_resnest_conv_gb_2048_1024_linear_fdb_2048_1024.py ( 1Conv&1FC/2FC )
 ```bash
-python main_reid.py train --save_dir='./pytorch-ckpt/resnest50/conv_gb_2048_1024_linear_fdb_2048_1024/bs64/market-bfe-adam-400' --max_epoch=400 --eval_step=30 --dataset=market1501 --test_batch=64 --train_batch=64 --optim=adam --adjust_lr
-python main_reid.py train --save_dir='./pytorch-ckpt/resnest50/conv_gb_2048_1024_linear_fdb_2048_1024/bs64/cuhk-label-bfe-adam-400' --max_epoch=400 --eval_step=30 --dataset=cuhk-label --test_batch=64 --train_batch=64 --optim=adam --adjust_lr
-python main_reid.py train --save_dir='./pytorch-ckpt/resnest50/conv_gb_2048_1024_linear_fdb_2048_1024/bs64/cuhk-detect-bfe-adam-400' --max_epoch=400 --eval_step=30 --dataset=cuhk-detect --test_batch=64 --train_batch=64 --optim=adam --adjust_lr
-python main_reid.py train --save_dir='./pytorch-ckpt/resnest50/conv_gb_2048_1024_linear_fdb_2048_1024/bs64/dukemtmc-reid-bfe-adam-400' --max_epoch=400 --eval_step=30 --dataset=dukemtmc-reid --test_batch=64 --train_batch=64 --optim=adam --adjust_lr
+$ ./table_4_9_1Conv.sh
 ```
 
 - networks_resnest_linear_gb_2048_1024_linear_fdb_2048_1024.py ( 2FC )
 ```bash
-python main_reid.py train --save_dir='./pytorch-ckpt/resnest50/linear_gb_2048_1024_linear_fdb_2048_1024/bs64/market-bfe-adam-400' --max_epoch=400 --eval_step=30 --dataset=market1501 --test_batch=64 --train_batch=64 --optim=adam --adjust_lr
-python main_reid.py train --save_dir='./pytorch-ckpt/resnest50/linear_gb_2048_1024_linear_fdb_2048_1024/bs64/cuhk-label-bfe-adam-400' --max_epoch=400 --eval_step=30 --dataset=cuhk-label --test_batch=64 --train_batch=64 --optim=adam --adjust_lr
-python main_reid.py train --save_dir='./pytorch-ckpt/resnest50/linear_gb_2048_1024_linear_fdb_2048_1024/bs64/cuhk-detect-bfe-adam-400' --max_epoch=400 --eval_step=30 --dataset=cuhk-detect --test_batch=64 --train_batch=64 --optim=adam --adjust_lr
-python main_reid.py train --save_dir='./pytorch-ckpt/resnest50/linear_gb_2048_1024_linear_fdb_2048_1024/bs64/dukemtmc-reid-bfe-adam-400' --max_epoch=400 --eval_step=30 --dataset=dukemtmc-reid --test_batch=64 --train_batch=64 --optim=adam --adjust_lr
+$ ./table_4_9_2FC.sh
 ```
 
 - networks_resnest_conv_gb_2048_1024_512_linear_fdb_2048_1024_512.py ( 2Conv&1FC/3FC )
 ```bash
-python main_reid.py train --save_dir='./pytorch-ckpt/resnest50/conv_gb_2048_1024_512_linear_fdb_2048_1024_512/bs64/market-bfe-adam-400' --max_epoch=400 --eval_step=30 --dataset=market1501 --test_batch=64 --train_batch=64 --optim=adam --adjust_lr
-python main_reid.py train --save_dir='./pytorch-ckpt/resnest50/conv_gb_2048_1024_512_linear_fdb_2048_1024_512/bs64/cuhk-label-bfe-adam-400' --max_epoch=400 --eval_step=30 --dataset=cuhk-label --test_batch=64 --train_batch=64 --optim=adam --adjust_lr
-python main_reid.py train --save_dir='./pytorch-ckpt/resnest50/conv_gb_2048_1024_512_linear_fdb_2048_1024_512/bs64/cuhk-detect-bfe-adam-400' --max_epoch=400 --eval_step=30 --dataset=cuhk-detect --test_batch=64 --train_batch=64 --optim=adam --adjust_lr
-python main_reid.py train --save_dir='./pytorch-ckpt/resnest50/conv_gb_2048_1024_512_linear_fdb_2048_1024_512/bs64/dukemtmc-reid-bfe-adam-400' --max_epoch=400 --eval_step=30 --dataset=dukemtmc-reid --test_batch=64 --train_batch=64 --optim=adam --adjust_lr
+$ ./table_4_9_2Conv.sh
 ```
 
 - networks_resnest_linear_gb_2048_1024_512_linear_fdb_2048_1024_512.py ( 3FC )
 ```bash
-python main_reid.py train --save_dir='./pytorch-ckpt/resnest50/linear_gb_2048_1024_512_linear_fdb_2048_1024_512/bs64/market-bfe-adam-400' --max_epoch=400 --eval_step=30 --dataset=market1501 --test_batch=64 --train_batch=64 --optim=adam --adjust_lr
-python main_reid.py train --save_dir='./pytorch-ckpt/resnest50/linear_gb_2048_1024_512_linear_fdb_2048_1024_512/bs64/cuhk-label-bfe-adam-400' --max_epoch=400 --eval_step=30 --dataset=cuhk-label --test_batch=64 --train_batch=64 --optim=adam --adjust_lr
-python main_reid.py train --save_dir='./pytorch-ckpt/resnest50/linear_gb_2048_1024_512_linear_fdb_2048_1024_512/bs64/cuhk-detect-bfe-adam-400' --max_epoch=400 --eval_step=30 --dataset=cuhk-detect --test_batch=64 --train_batch=64 --optim=adam --adjust_lr
-python main_reid.py train --save_dir='./pytorch-ckpt/resnest50/linear_gb_2048_1024_512_linear_fdb_2048_1024_512/bs64/dukemtmc-reid-bfe-adam-400' --max_epoch=400 --eval_step=30 --dataset=dukemtmc-reid --test_batch=64 --train_batch=64 --optim=adam --adjust_lr
+$ ./table_4_9_3FC.sh
 ```
