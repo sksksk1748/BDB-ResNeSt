@@ -15,7 +15,7 @@ $ conda activate py37_bdn
 
 $ cd BDB-ResNeSt
 
-$ pip install requirements.txt 
+$ pip install -r requirements.txt 
 
 # 執行 initialization.sh 部屬 dataset
 $ sudo chmod 777 initialization.sh
